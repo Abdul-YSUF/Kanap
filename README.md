@@ -1,7 +1,6 @@
 # Projet Kanap Frontend Javascript #
-+
-### Plan de test ###
 
+Codage en JS et Plan de Test
 
 # Kanap #
 
