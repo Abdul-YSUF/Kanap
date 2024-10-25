@@ -10,7 +10,7 @@ const addToCart = document.getElementById("addToCart");
 // Récupération produit par l'Id
 const productId = new URLSearchParams(location.search).get("id");
 // console.log(productId)
-fetch("http://localhost:3000/api/products/" + productId)
+fetch("https://comfy-pony-4d1729.netlify.app/api/products/" + productId)
     // Récupération du résultat de la requête au format json (Promise)
     .then((res) => res.json())
     // On retourne et récupère la vraie valeur du résultat json précédent (Promise)

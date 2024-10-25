@@ -1,5 +1,5 @@
 // Récupération Data API Produits
-fetch("http://localhost:3000/api/products")
+fetch("https://comfy-pony-4d1729.netlify.app/.netlify/functions/hello")
 // Récupération du résultat de la requête au format json (Promise)
   .then((res) => res.json())
   // On retourne et récupère la vraie valeur du résultat json précédent (Promise)
