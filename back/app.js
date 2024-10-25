@@ -3,7 +3,7 @@ const path = require('path');
 const productRoutes = require('./routes/product');
 
 const app = express();
-const port = 3000;  // Assurez-vous que le port est bien défini
+const port = process.env.PORT || 3000;  // Assurez-vous que le port est bien défini
 
 // Middleware CORS
 app.use((req, res, next) => {
