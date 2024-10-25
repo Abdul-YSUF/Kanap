@@ -1,13 +1,17 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "back/routes/**/*.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      { "src": "/routes/(.*)", "dest": "back/routes/$1" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "back/routes/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "front/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "back/routes/$1" },
+    { "src": "/(.*)", "dest": "front/$1" }
+  ]
+}
