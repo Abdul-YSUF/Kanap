@@ -6,7 +6,7 @@ const cartItems = document.getElementById("cart__items");
 let products = [];
 
 // Récupération Data API Produits
-fetch("https://comfy-pony-4d1729.netlify.app/api/products")
+fetch("http://localhost:3000/api/products")
 .then((res) => res.json())
 .then((data) => {
     if (getLocalStorage) {
@@ -237,7 +237,7 @@ const checkValidationForm = () => {
 }
 
 // Fetch méthode Post pour envoyer data contact et Id produit
-fetch("https://comfy-pony-4d1729.netlify.app/api/products/order", {
+fetch("http://localhost:3000/api/products/order", {
   method: "POST",
   body: JSON.stringify(order),
   headers: {
